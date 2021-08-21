@@ -1,7 +1,10 @@
 import DataSource from "../data/DataSource.js";
 
+
+
+
 const main = () => {
-    DataSource.dataHospital()
+    DataSource.dataCovidProv()
     .then(response => {
         // data hospital siap digunakan
         console.log(response);

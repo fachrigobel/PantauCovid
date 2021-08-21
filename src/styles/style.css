@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Open Sans Hebrew", sans-serif;
+  src: url(fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap);
+}
+
+:root {
+  --warnaUtama: linear-gradient(to right, #045de9, #09c6f9);
+  --openSansHebrew: "Open Sans Hebrew", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  font-family: var(--openSansHebrew);
+}
+
+body {
+  background-image: url(../img/244477.jpg), url(../img/24447.jpg);
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, top;
+}
+
+#title-brand {
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+#title-brand span:nth-child(2) {
+  margin-top: -20px;
+}
+
+#title-brand span:first-child {
+  font-weight: bold;
+  font-size: 52px;
+}
+
+#navbar-nav {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+header section > .more-information-btn {
+  width: 150px;
+  height: 50px;
+  background-image: var(--warnaUtama);
+  border-radius: 30px;
+}
+
+header section > h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ff524d;
+  font-size: 96px;
+}
+
+header section > p {
+  width: 600px;
+  font-size: 20px;
+  font-family: var(--roboto);
+}
+
+header section .more-information-btn a {
+  font-family: var(--roboto);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+header > section {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#social-media > span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  margin-top: 50px;
+}
+
+#social-media > span:nth-child(1) {
+  background-image: url(../img/icons/linkedin.png);
+  background-size: cover;
+}
+
+#social-media > span:nth-child(2) {
+  background-image: url(../img/icons/instagram.png);
+  background-size: cover;
+}
+
+#social-media > span:nth-child(3) {
+  background-image: url(../img/icons/github.png);
+  background-size: cover;
+}
+
+main {
+  margin-top: 100px;
+}
+
+main section:nth-child(1) {
+  width: 80%;
+  background-image: var(--warnaUtama);
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+main section:nth-child(1) > h2 {
+  font-size: 34px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+#data-covid-all {
+  margin: 20px 0 50px 0;
+  font-family: var(--roboto);
+  width: 100%;
+}
+
+main section:nth-child(2) {
+  width: 70%;
+  margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  border: 2px solid #09c6f9;
+}
+
+main section:nth-child(2) > h2 {
+  padding: 15px 30px 0 15px;
+  font-weight: bold;
+}
+
+footer {
+  background-image: var(--warnaUtama);
+  margin-top: 300px;
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+  margin-top: 50px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer form {
+  width: 500px;
+}
+
+footer form .form-group {
+  margin-bottom: 10px;
+}
+
+#btn-footer {
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #045de9;
+}
+
+.footer-item a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 10px;
+}

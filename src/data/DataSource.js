@@ -8,7 +8,7 @@ class DataSource {
     static dataCovidProv() {
         return fetch(`https://data.covid19.go.id/public/api/prov.json`)
         .then(response => response.json())
-        .then(responseJson => Promise.resolve(responseJson));
+        .then(responseJson => Promise.resolve(responseJson.list_data));
     }
 
     static dataHospital() {
