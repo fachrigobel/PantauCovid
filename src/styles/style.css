@@ -9,7 +9,11 @@
 }
 
 :root {
-  --warnaUtama: linear-gradient(to right, #045de9, #09c6f9);
+  --warnaUtama: linear-gradient(
+    to right,
+    rgba(4, 93, 233, 1),
+    rgba(9, 198, 249, 1)
+  );
   --openSansHebrew: "Open Sans Hebrew", sans-serif;
   --roboto: "Roboto", sans-serif;
   --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -38,6 +42,14 @@ body {
 #title-brand span:first-child {
   font-weight: bold;
   font-size: 52px;
+}
+
+.bg-nav {
+  background-image: linear-gradient(
+    to right,
+    rgba(4, 93, 233, 0.8),
+    rgba(9, 198, 249, 0.8)
+  );
 }
 
 #navbar-nav {
@@ -108,8 +120,11 @@ main {
   margin-top: 100px;
 }
 
-main section:nth-child(1) {
+covid-all {
   width: 80%;
+}
+
+main section:nth-child(1) {
   background-image: var(--warnaUtama);
   border-radius: 50px;
   color: #fff;
