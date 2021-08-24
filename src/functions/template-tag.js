@@ -73,7 +73,7 @@ function footer() {
             <a href="#">Data Covid-19 dari data.covid19.go.id</a>
             <a href="#">Data Rujukan Rumah Sakit dari<br />dekontaminasi.com</a>
           </div>
-          <div class="footer-item d-flex flex-column">
+          <div class="footer-item d-flex flex-column" id="kontak">
             <h3>Kontak Saya</h3>
             <a href="#">kapistakras@gmail.com</a>
             <a href="#">+62 821 8819 1052</a>
@@ -122,7 +122,7 @@ function navbar() {
                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item ms-5">
-                <a class="nav-link" href="#">Covid-19</a>
+                <a class="nav-link" href="covid-19.html">Covid-19</a>
               </li>
               <li class="nav-item dropdown ms-5">
                 <a
@@ -138,7 +138,7 @@ function navbar() {
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Berita</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Protokol Kesehatan</a>
+                    <a class="dropdown-item" href="protokol-kesehatan.html">Protokol Kesehatan</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="rs-rujukan.html">Rumah Sakit Rujukan</a>
@@ -146,7 +146,7 @@ function navbar() {
                 </ul>
               </li>
               <li class="nav-item ms-5">
-                <a class="nav-link" href="#">Kontak Saya</a>
+                <a class="nav-link" href="#kontak">Kontak Saya</a>
               </li>
             </ul>
           </div>
@@ -180,4 +180,14 @@ function listTableRS(data) {
     return tr;
 }
 
-export {head, footer, navbar, listTableCovidProv, listTableRS};
+function animasiNavbar(nav) {
+    window.onscroll = function() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          nav.classList.add("bg-nav");
+      } else {
+          nav.classList.remove("bg-nav");
+      }
+    }
+}
+
+export {head, footer, navbar, listTableCovidProv, listTableRS, animasiNavbar};

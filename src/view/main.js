@@ -1,5 +1,5 @@
 import DataSource from "../data/DataSource.js";
-import { listTableCovidProv } from "../functions/template-tag.js";
+import { listTableCovidProv, animasiNavbar } from "../functions/template-tag.js";
 
 
 
@@ -14,14 +14,7 @@ const main = () => {
         });
     });
 
-    window.onscroll = function() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        nav.classList.add("bg-nav");
-    } else {
-        nav.classList.remove("bg-nav");
-  }
-}
-    
+    animasiNavbar(nav);
 }
 
 export default main;

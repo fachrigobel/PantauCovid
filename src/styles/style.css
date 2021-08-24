@@ -117,7 +117,7 @@ header > section {
 }
 
 main {
-  margin-top: 100px;
+  margin: 100px 150px 0px 150px;
 }
 
 covid-all {
@@ -196,12 +196,21 @@ footer form .form-group {
   padding-bottom: 10px;
 }
 
-/* Style rs rujukan */
-#heading-rs-rujukan {
+main h2 {
   font-weight: bold;
   padding: 100px 0px 30px 0px;
 }
 
+/* Style rs rujukan */
 #table-rs {
   margin-top: 0px;
+}
+
+#gambar-protokol-kesehatan {
+  display: block;
+  margin: 0 auto;
+}
+
+.protokol-kesehatan {
+  width: 60%;
 }
