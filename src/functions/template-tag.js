@@ -119,7 +119,7 @@ function navbar() {
           >
             <ul class="navbar-nav mb-2 mb-lg-0" id="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item ms-5">
                 <a class="nav-link" href="#">Covid-19</a>
@@ -141,7 +141,7 @@ function navbar() {
                     <a class="dropdown-item" href="#">Protokol Kesehatan</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./src/pages/rs-rujukan.html">Rumah Sakit Rujukan</a>
+                    <a class="dropdown-item" href="rs-rujukan.html">Rumah Sakit Rujukan</a>
                   </li>
                 </ul>
               </li>
@@ -168,4 +168,16 @@ function listTableCovidProv(data) {
     return tr;
 }
 
-export {head, footer, navbar, listTableCovidProv};
+function listTableRS(data) {
+    const tr = document.createElement("tr");    
+    tr.innerHTML = `
+        <th class="scope">${data.name}</th class="row">
+        <td>${data.address}</td>
+        <td>${data.phone == null ? "-" : data.phone}</td>
+        `;
+
+
+    return tr;
+}
+
+export {head, footer, navbar, listTableCovidProv, listTableRS};
