@@ -4,3 +4,5 @@ Aplikasi ini memberikan informasi ter-update mengenai data pandemi covid-19 di i
 Aplikasi menggunakan vanilla javascript dan framework bootstrap sebagai tampilannya. Data yang diambil menggunakan teknik async.
 
 Aplikasi ini akan terus dikembangkan sampai semua fiturnya terpenuhi.
+
+Note : Saat ini responsive belum dikerjakan
