@@ -32,6 +32,7 @@ function head() {
     />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="stylesheet" href="./src/styles/responsive.css" />
+    <link rel="stylesheet" href="./src/styles/animation.css" />
     `;
 }
 
@@ -190,4 +191,20 @@ function animasiNavbar(nav) {
     }
 }
 
-export {head, footer, navbar, listTableCovidProv, listTableRS, animasiNavbar};
+function mediaStop() {
+  let windowWeb = window.matchMedia("(max-width: 1023px)");
+  const bodyHTML = document.querySelector("body");
+  if(windowWeb.matches) {
+      bodyHTML.style.backgroundImage = "none";
+      bodyHTML.innerHTML = `
+        <div id="media-stop">
+          <h1>Uppsss....</h1>
+          <h1>Mohon Maaf, Saat Ini Website Tidak Bisa Diakses Menggunakan Tablet atau Mobile</h1>
+          <p>Silakan menggunakan desktop atau laptop untuk mengaksesnya yaa :D</p>
+          <p>Website Bermasalah? Silakan Reload Website ini</p>
+        </div>
+      `;
+  }
+}
+
+export {head, footer, navbar, listTableCovidProv, listTableRS, animasiNavbar, mediaStop};

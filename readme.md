@@ -5,6 +5,7 @@ Aplikasi menggunakan vanilla javascript dan framework bootstrap sebagai tampilan
 
 ## Requirements
 - CORS Web Extension (agar data bisa ditampilkan)
+- Pakai Google Chrome Aja :D
 
 
 

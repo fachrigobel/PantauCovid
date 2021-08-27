@@ -1,2 +1,23 @@
+@font-face {
+  font-family: "Open Sans Hebrew", sans-serif;
+  src: url(fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+}
+
 @media screen and (max-width: 1023px) {
+  #media-stop {
+    font-family: "Open Sans Hebrew", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+      to right,
+      rgba(4, 93, 233, 1),
+      rgba(9, 198, 249, 1)
+    );
+    text-align: center;
+    padding: 0 50px;
+  }
 }
